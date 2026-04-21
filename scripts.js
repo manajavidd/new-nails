@@ -146,8 +146,9 @@ let nails = [
 // This function adds cards the page to display the data in the array
 function showCards() {
   const cardContainer = document.getElementById("card-container");
-  cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
+
+  cardContainer.innerHTML = "";
 
   for (let i = 0; i < nails.length; i++) {
     let nail = nails[i];
