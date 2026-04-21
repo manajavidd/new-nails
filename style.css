@@ -7,9 +7,9 @@ body {
 }
 
 .main-header {
-  background-color: linear-gradient(to right, #f8c8dc, #ffd9e8);
+  background: linear-gradient(to right, #f8c8dc, #ffd9e8);
   padding: 50px 20px;
-  text-aling: center;
+  text-align: center;
 }
 
 .title {
@@ -26,14 +26,17 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 999;
   pointer-events: none;
-  background-image: 
-    radial-gradient(2px 2px at 20% 30%, #fff, transparent),
-    radial-gradient(2px 2px at 70% 60%, #ffd1e6, transparent),
-    radial-gradient(1.5px 1.5px at 40% 80%, #fff, transparent),
-    radial-gradient(2px 2px at 90% 20%, #ffc0cb, transparent);
+  background-image:
+    radial-gradient(circle, #ffffff 2px, transparent 3px),
+    radial-gradient(circle, #ffd1e6 2px, transparent 3px),
+    radial-gradient(circle, #ffc0cb 1.5px, transparent 2.5px);
+
+  background-size: 150px 150px, 200px 200px, 120px 120px;
+  background-position: 0 0, 50px 100px, 100px 50px;
   background-repeat: repeat;
-  animation: sparkleMove 10s linear infinite;
+  animation: sparkleMove 6s linear infinite;
   opacity: 0.6;
 }
 
@@ -67,7 +70,7 @@ body {
 .card h2 {
   padding: 16px;
   color: #c75b8b;
-  margin-bottom: 0 0 12px 0;
+  margin: 0 0 12px 0;
 
   white-space: nowrap;
   overflow: hidden;
@@ -97,7 +100,7 @@ body {
 
 button {
   text-align: center;
-  background-color: linear-gradient(to right, #ff9cc7, #ff5ca8);
+  background: linear-gradient(to right, #ff9cc7, #ff5ca8);
   border: none;
   padding-left: 10px;
   padding-right: 10px;
