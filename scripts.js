@@ -174,11 +174,11 @@ function editCardContent(card, nail) {
   cardImage.src = nail.image;
   cardImage.alt = nail.name;
 
-  const cardText = card.querySelector("-card.content p");
+  const cardText = card.querySelector(".card-content p");
 
   if (cardText) {
     cardText.textContent = 
-     `${nail.vibe} • ${nail.color}• ${nail.shape} • ${nail.length}`;
+     `${nail.vibe} • ${nail.color} • ${nail.shape} • ${nail.length}`;
 }
   // You can use console.log to help you debug!
   // View the output by right clicking on your website,
