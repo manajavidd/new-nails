@@ -51,7 +51,13 @@ body {
     transform: translateY(-200px);
   }
 }
-    
+.main-header,
+#card-container,
+.footer {
+  position: relative;
+  z-index: 2;
+}
+
 #card-container {
   display: flex;
   flex-wrap: wrap;
@@ -72,7 +78,6 @@ body {
   text-align: left;
 
   position: relative;
-  z-index: 1;
   transition: all 0.3s ease;
 }
 
