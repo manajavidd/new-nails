@@ -136,3 +136,16 @@ button:hover {
   box-shadow: 0 12px 25px rgba(255, 105, 180, 0.3);
 }
 
+.heart {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 22px;
+  color: #ff5ca8;
+  curser: pointer;
+  transition: transform 0.2s ease;
+}
+.heart:hover {
+  transform: scale(1.2);
+}
+  
