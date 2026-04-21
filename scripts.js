@@ -35,6 +35,7 @@ let nails = [
   { 
     name : "Pink & White Stripes",
     vibe : "fun",
+    color: "pink",
     length : "medium",
     shape : "sqaure",
     image : "assets/nail1.jpg"
@@ -42,6 +43,7 @@ let nails = [
   { 
     name : "Pink & Yellow Stripes",
     vibe : "fun",
+    color: "pink",
     length : "medium",
     shape : "sqaure",
     image : "assets/nail2.jpg"
@@ -49,6 +51,7 @@ let nails = [
   { 
     name : "Pink Polka Chrome",
     vibe : "fun",
+    color: "pink",
     length : "medium",
     shape : "almond",
     image : "assets/nail3.jpg"
@@ -56,6 +59,7 @@ let nails = [
   { 
     name : "Pink Chrome",
     vibe : "classy",
+    color: "pink",
     length : "medium",
     shape : "sqaure",
     image : "assets/nail4.jpg"
@@ -63,6 +67,7 @@ let nails = [
   { 
     name : "White Frenchies",
     vibe : "classy",
+    color: "white",
     length : "long",
     shape : "sqaure",
     image : "assets/nail5.jpg"
@@ -70,6 +75,7 @@ let nails = [
   { 
     name : "Milky White",
     vibe : "simple",
+    color: "white",
     length : "long",
     shape : "stiletto",
     image : "assets/nail6.jpg"
@@ -77,6 +83,7 @@ let nails = [
   { 
     name : "Polka White",
     vibe : "classy",
+    color: "white",
     length : "medium",
     shape : "almond",
     image : "assets/nail7.jpg"
@@ -84,6 +91,7 @@ let nails = [
   { 
     name : "Simple White",
     vibe : "simple",
+    color: "white",
     length : "short",
     shape : "sqaure",
     image : "assets/nail8.jpg"
@@ -91,6 +99,7 @@ let nails = [
   { 
     name : "Lace White",
     vibe : "fun",
+    color: "white",
     length : "long",
     shape : "stiletto",
     image : "assets/nail9.jpg"
@@ -98,6 +107,7 @@ let nails = [
   { 
     name : "Cheetah White",
     vibe : "fun",
+    color: "white",
     length : "medium",
     shape : "sqaure",
     image : "assets/nail10.jpg"
@@ -105,6 +115,7 @@ let nails = [
   { 
     name : "French Pink Polka",
     vibe : "fun",
+    color: "pink",
     length : "long",
     shape : "square",
     image : "assets/nail11.jpg"
@@ -112,6 +123,7 @@ let nails = [
   { 
     name : "Glitter Pink",
     vibe : "fun",
+    color: "pink",
     length : "long",
     shape : "stiletto",
     image : "assets/nail12.jpg"
@@ -119,6 +131,7 @@ let nails = [
   { 
     name : "Nude Pink",
     vibe : "classy",
+    color: "pink",
     length : "short",
     shape : "sqaure",
     image : "assets/nail13.jpg"
@@ -136,40 +149,38 @@ function showCards() {
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
 
-  for (let i = 0; i < titles.length; i++) {
-    let title = titles[i];
+  for (let i = 0; i < nails.length; i++) {
+    let nail = nails[i];
 
     // This part of the code doesn't scale very well! After you add your
     // own data, you'll need to do something totally different here.
-    let imageURL = "";
-    if (i == 0) {
-      imageURL = FRESH_PRINCE_URL;
-    } else if (i == 1) {
-      imageURL = CURB_POSTER_URL;
-    } else if (i == 2) {
-      imageURL = EAST_LOS_HIGH_POSTER_URL;
-    }
+    
+  
 
     const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, title, imageURL); // Edit title and image
+    editCardContent(nextCard, nail); // Edit title and image
     cardContainer.appendChild(nextCard); // Add new card to the container
   }
 }
 
-function editCardContent(card, newTitle, newImageURL) {
+function editCardContent(card, nail) {
   card.style.display = "block";
 
   const cardHeader = card.querySelector("h2");
-  cardHeader.textContent = newTitle;
+  cardHeader.textContent = nail.name;
 
   const cardImage = card.querySelector("img");
-  cardImage.src = newImageURL;
-  cardImage.alt = newTitle + " Poster";
+  cardImage.src = new.image;
+  cardImage.alt = nail.name;
+
+  const cardText = card.querySelector("p");
+  cardText. textContent = 
+    '${nail.vibe} • ${nail.color}• ${nail.shape}• ${nail.length}';
 
   // You can use console.log to help you debug!
   // View the output by right clicking on your website,
   // select "Inspect", then click on the "Console" tab
-  console.log("new card:", newTitle, "- html: ", card);
+  console.log("new card:", nail.name);
 }
 
 // This calls the addCards() function when the page is first loaded
@@ -183,6 +194,6 @@ function quoteAlert() {
 }
 
 function removeLastCard() {
-  titles.pop(); // Remove last item in titles array
+  nails.pop(); // Remove last item in titles array
   showCards(); // Call showCards again to refresh
 }
