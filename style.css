@@ -1,51 +1,61 @@
 html,
 body {
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #fff7fb, #ffe4ef);
+  color: #444;
 }
 
 .main-header {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding-bottom: 10px;
+  background-color: linear-gradient(to right, #f8c8dc, #ffd9e8);
+  padding: 50px 20px;
+  text-aling: center;
 }
 
 .title {
   text-align: center;
   margin: 0;
-  font-size: 8em;
-  font-family: "Helvetica";
+  font-size: 72px;
   font-weight: normal;
   color: white;
 }
 
 #card-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 20px;
+  gap: 20px;
+  padding: 30px 20px;
 }
 
 .card {
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 5px;
+  width: 220px;
+  background: #fff7fb;
+  border: 1px solid #f3c7da;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  text-align: left;
 }
 
-.card-content {
-  padding: 20px;
-  font-family: "Verdana";
-  color: #777;
+.card h2 {
+  padding: 18px;
+  color: #c75b8b;
+  margin-bottom: 10px;
 }
 
-.card-content h2 {
-  margin-top: 0;
-  font-size: 20px;
+.card p {
+  font-size: 15px;
+  color: #6d6d6d;
+  line-height: 1.4;
 }
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 12px 0;
 }
 
 .footer {
@@ -57,7 +67,7 @@ body {
 
 button {
   text-align: center;
-  background-color: #666;
+  background-color: linear-gradient(to right, #ff9cc7, #ff5ca8);
   border: none;
   padding-left: 10px;
   padding-right: 10px;
@@ -66,5 +76,8 @@ button {
   color: white;
   font-size: 22px;
   cursor: pointer;
-  margin: 5px;
+  margin: 10px;
+}
+button:hover {
+  opacity: 0.9;
 }
