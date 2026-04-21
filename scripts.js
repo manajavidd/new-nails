@@ -178,7 +178,7 @@ function editCardContent(card, nail) {
 
   if (cardText) {
     cardText.textContent = 
-     `${nail.vibe} • ${nail.color}• ${nail.shape}• ${nail.length}`;
+     `${nail.vibe} • ${nail.color}• ${nail.shape} • ${nail.length}`;
 }
   // You can use console.log to help you debug!
   // View the output by right clicking on your website,
