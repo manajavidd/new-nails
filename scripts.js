@@ -37,7 +37,7 @@ let nails = [
     vibe : "fun",
     color: "pink",
     length : "medium",
-    shape : "sqaure",
+    shape : "square",
     image : "assets/nail1.jpg"
   },
   { 
@@ -45,7 +45,7 @@ let nails = [
     vibe : "fun",
     color: "pink",
     length : "medium",
-    shape : "sqaure",
+    shape : "square",
     image : "assets/nail2.jpg"
   },
   { 
@@ -61,7 +61,7 @@ let nails = [
     vibe : "classy",
     color: "pink",
     length : "medium",
-    shape : "sqaure",
+    shape : "square",
     image : "assets/nail4.jpg"
   },
   { 
@@ -69,7 +69,7 @@ let nails = [
     vibe : "classy",
     color: "white",
     length : "long",
-    shape : "sqaure",
+    shape : "square",
     image : "assets/nail5.jpg"
   },
   { 
@@ -93,7 +93,7 @@ let nails = [
     vibe : "simple",
     color: "white",
     length : "short",
-    shape : "sqaure",
+    shape : "square",
     image : "assets/nail8.jpg"
   },
   { 
@@ -109,7 +109,7 @@ let nails = [
     vibe : "fun",
     color: "white",
     length : "medium",
-    shape : "sqaure",
+    shape : "square",
     image : "assets/nail10.jpg"
   },
   { 
@@ -133,7 +133,7 @@ let nails = [
     vibe : "classy",
     color: "pink",
     length : "short",
-    shape : "sqaure",
+    shape : "square",
     image : "assets/nail13.jpg"
   }
 ];
@@ -170,12 +170,12 @@ function editCardContent(card, nail) {
   cardHeader.textContent = nail.name;
 
   const cardImage = card.querySelector("img");
-  cardImage.src = new.image;
+  cardImage.src = nail.image;
   cardImage.alt = nail.name;
 
   const cardText = card.querySelector("p");
-  cardText. textContent = 
-    '${nail.vibe} • ${nail.color}• ${nail.shape}• ${nail.length}';
+  cardText.textContent = 
+     `${nail.vibe} • ${nail.color}• ${nail.shape}• ${nail.length}`;
 
   // You can use console.log to help you debug!
   // View the output by right clicking on your website,
