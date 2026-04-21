@@ -33,88 +33,95 @@ const EAST_LOS_HIGH_POSTER_URL =
 // This is an array of strings (Nail descriptions + titles)
 let nails = [
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "Pink & White Stripes",
+    vibe : "fun",
+    length : "medium",
+    shape : "sqaure",
     image : "assets/nail1.jpg"
   },
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "Pink & Yellow Stripes",
+    vibe : "fun",
+    length : "medium",
+    shape : "sqaure",
     image : "assets/nail2.jpg"
   },
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "Pink Polka Chrome",
+    vibe : "fun",
+    length : "medium",
+    shape : "almond",
     image : "assets/nail3.jpg"
   },
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "Pink Chrome",
+    vibe : "classy",
+    length : "medium",
+    shape : "sqaure",
     image : "assets/nail4.jpg"
   },
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "White Frenchies",
+    vibe : "classy",
+    length : "long",
+    shape : "sqaure",
     image : "assets/nail5.jpg"
   },
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "Milky White",
+    vibe : "simple",
+    length : "long",
+    shape : "stiletto",
     image : "assets/nail6.jpg"
   },
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "Polka White",
+    vibe : "classy",
+    length : "medium",
+    shape : "almond",
     image : "assets/nail7.jpg"
   },
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "Simple White",
+    vibe : "simple",
+    length : "short",
+    shape : "sqaure",
     image : "assets/nail8.jpg"
   },
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "Lace White",
+    vibe : "fun",
+    length : "long",
+    shape : "stiletto",
     image : "assets/nail9.jpg"
   },
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "Cheetah White",
+    vibe : "fun",
+    length : "medium",
+    shape : "sqaure",
     image : "assets/nail10.jpg"
   },
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "French Pink Polka",
+    vibe : "fun",
+    length : "long",
+    shape : "square",
     image : "assets/nail11.jpg"
   },
   { 
-    name : "",
-    vibe : "",
-    length : "",
-    shape : "",
+    name : "Glitter Pink",
+    vibe : "fun",
+    length : "long",
+    shape : "stiletto",
     image : "assets/nail12.jpg"
+  },
+  { 
+    name : "Nude Pink",
+    vibe : "classy",
+    length : "short",
+    shape : "sqaure",
+    image : "assets/nail13.jpg"
   }
 ];
 
