@@ -228,8 +228,9 @@ function filterNails(type) {
 
 function showFilteredCards(list) {
   const cardContainer = document.getElementById("card-container");
-  cardComtaier.innerHTML = "";
   const templateCard = document.querySelector(".card");
+
+  cardContainer.innerHTML = "";
 
   for (let i = 0; i < list.length; i++) {
     const nextCard = templateCard.cloneNode(true);
