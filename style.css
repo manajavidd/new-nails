@@ -117,3 +117,8 @@ button {
 button:hover {
   opacity: 0.9;
 }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(255, 105, 180, 0.3);
+  transition: 0.3s;
+}
