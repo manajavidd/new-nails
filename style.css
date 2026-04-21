@@ -17,7 +17,7 @@ body {
   margin: 0;
   font-size: 72px;
   font-weight: normal;
-  color: white;
+  color: #c75b8b;
 }
 
 #card-container {
@@ -39,9 +39,13 @@ body {
 }
 
 .card h2 {
-  padding: 18px;
+  padding: 16px;
   color: #c75b8b;
-  margin-bottom: 10px;
+  margin-bottom: 0 0 12px 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card p {
