@@ -31,14 +31,14 @@ body {
   opacity: 1;
 
   background-image:
-    radial-gradient(circle, rgba(255,255,255,1) 0 3px, transparent 4px),
-    radial-gradient(circle, rgba(255,192,203,1) 0 3px, transparent 4px),
-    radial-gradient(circle, rgba(255,214,232,1) 0 2px, transparent 3px);
+    radial-gradient(circle, rgba(255,255,255,1) 0 1.5px, transparent 4px),
+    radial-gradient(circle, rgba(255,192,203,1) 0 2px, transparent 4px),
+    radial-gradient(circle, rgba(255,214,232,1) 0 1.5px, transparent 3px);
 
   background-size: 120px 120px, 180px 180px, 90px 90px;
   background-position: 0 0, 50px 100px, 100px 50px;
 
-  animation: sparkleMove 4s linear infinite;
+  animation: sparkleMove 6s linear infinite;
 
   filter: drop-shadow(0 0 6px #fff) drop-shadow(0 0 10px #ffc0cb);
 }
