@@ -218,8 +218,8 @@ function removeLastCard() {
 }
 
 //filters 
-function = filterNails(type) {
-  const filtered = nails.filter( nail =>
+function filterNails(type) {
+  const filtered = nails.filter((nail) =>
     nail.color === type || nail.vibe === type
   );
 
@@ -231,9 +231,9 @@ function showFilteredCards(list) {
   cardComtaier.innerHTML = "";
   const templateCard = document.querySelector(".card");
 
-  for (let i = 0; i  < list.length; i++) {
+  for (let i = 0; i < list.length; i++) {
     const nextCard = templateCard.cloneNode(true);
-    editCardContent(next,Card, list[i]);
+    editCardContent(nextCard, list[i]);
     cardContainer.appendChild(nextCard);
   }
 }
