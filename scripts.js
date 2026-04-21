@@ -216,3 +216,26 @@ function removeLastCard() {
   nails.pop(); // Remove last item in titles array
   showCards(); // Call showCards again to refresh
 }
+
+//filters 
+function = filterNails(type) {
+  const filtered = nails.filter( nail =>
+    nail.color === type || nail.vibe === type
+  );
+
+  showFilteredCards(filtered);
+}
+
+function showFilteredCards(list) {
+  const cardContainer = document.getElementById("card-container");
+  cardComtaier.innerHTML = "";
+  const templateCard = document.querySelector(".card");
+
+  for (let i = 0; i  < list.length; i++) {
+    const nextCard = templateCard.cloneNode(true);
+    editCardContent(next,Card, list[i]);
+    cardContainer.appendChild(nextCard);
+  }
+}
+  
+  
