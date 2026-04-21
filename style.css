@@ -28,7 +28,7 @@ body {
   height: 100%;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.45;
 
   background-image:
     radial-gradient(circle, rgba(255,255,255,1) 0 1.5px, transparent 2.5px),
@@ -58,6 +58,8 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 30px 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .card {
@@ -69,11 +71,12 @@ body {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
   text-align: left;
 
+  position: relative;
+  z-index: 1;
   transition: all 0.3s ease;
 }
 
 .card h2 {
-  padding: 16px;
   color: #c75b8b;
   margin: 0 0 12px 0;
 
@@ -101,6 +104,8 @@ body {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 button {
@@ -123,11 +128,4 @@ button:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(255, 105, 180, 0.3);
 }
-.main-header,
-#card-container,
-.footer,
-.card {
-  position: relative;
-  z-index: 1;
 
-}
