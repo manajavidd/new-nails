@@ -20,6 +20,32 @@ body {
   color: #c75b8b;
 }
 
+.sparkles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+    radial-gradient(2px 2px at 70% 60%, #ffd1e6, transparent),
+    radial-gradient(1.5px 1.5px at 40% 80%, #fff, transparent),
+    radial-gradient(2px 2px at 90% 20%, #ffc0cb, transparent);
+  background-repeat: repeat;
+  animation: sparkleMove 10s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes sparkleMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+    
 #card-container {
   display: flex;
   flex-wrap: wrap;
