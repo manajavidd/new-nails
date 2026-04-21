@@ -30,12 +30,96 @@ const CURB_POSTER_URL =
 const EAST_LOS_HIGH_POSTER_URL =
   "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
 
-// This is an array of strings (TV show titles)
-let titles = [
-  "Fresh Prince of Bel Air",
-  "Curb Your Enthusiasm",
-  "East Los High",
+// This is an array of strings (Nail descriptions + titles)
+let nails = [
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail1.jpg"
+  },
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail2.jpg"
+  },
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail3.jpg"
+  },
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail4.jpg"
+  },
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail5.jpg"
+  },
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail6.jpg"
+  },
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail7.jpg"
+  },
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail8.jpg"
+  },
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail9.jpg"
+  },
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail10.jpg"
+  },
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail11.jpg"
+  },
+  { 
+    name : "",
+    vibe : "",
+    length : "",
+    shape : "",
+    image : "assets/nail12.jpg"
+  }
 ];
+
+
+
 // Your final submission should have much more data than this, and
 // you should use more than just an array of strings to store it all.
 
