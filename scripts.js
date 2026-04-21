@@ -33,7 +33,7 @@ const EAST_LOS_HIGH_POSTER_URL =
 // This is an array of strings (Nail descriptions + titles)
 let nails = [
   { 
-    name : "Pink & White Stripes",
+    name : "White Stripes",
     vibe : "fun",
     color: "pink",
     length : "medium",
@@ -41,7 +41,7 @@ let nails = [
     image : "assets/nail1.jpg"
   },
   { 
-    name : "Pink & Yellow Stripes",
+    name : "Yellow Stripes",
     vibe : "fun",
     color: "pink",
     length : "medium",
@@ -49,7 +49,7 @@ let nails = [
     image : "assets/nail2.jpg"
   },
   { 
-    name : "Pink Polka Chrome",
+    name : "Polka Chrome",
     vibe : "fun",
     color: "pink",
     length : "medium",
@@ -113,7 +113,7 @@ let nails = [
     image : "assets/nail10.jpg"
   },
   { 
-    name : "French Pink Polka",
+    name : "French Polka",
     vibe : "fun",
     color: "pink",
     length : "long",
@@ -135,6 +135,22 @@ let nails = [
     length : "short",
     shape : "square",
     image : "assets/nail13.jpg"
+  },
+  { 
+    name : "Nude Ombre",
+    vibe : "classy",
+    color: "nude",
+    length : "medium",
+    shape : "almond",
+    image : "assets/nail15.jpg"
+  },
+  { 
+    name : "Pastel Sunset",
+    vibe : "fun",
+    color: "pink",
+    length : "medium",
+    shape : "almond",
+    image : "assets/nail14.jpg"
   }
 ];
 
