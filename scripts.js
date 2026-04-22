@@ -38,6 +38,7 @@ let nails = [
     color: "pink",
     length : "medium",
     shape : "square",
+    favortie: false,
     image : "assets/nail1.jpg"
   },
   { 
@@ -46,6 +47,7 @@ let nails = [
     color: "pink",
     length : "medium",
     shape : "square",
+    favortie: false,
     image : "assets/nail2.jpg"
   },
   { 
@@ -54,6 +56,7 @@ let nails = [
     color: "pink",
     length : "medium",
     shape : "almond",
+    favortie: false,
     image : "assets/nail3.jpg"
   },
   { 
@@ -62,6 +65,7 @@ let nails = [
     color: "pink",
     length : "medium",
     shape : "square",
+    favortie: false,
     image : "assets/nail4.jpg"
   },
   { 
@@ -70,6 +74,7 @@ let nails = [
     color: "white",
     length : "long",
     shape : "square",
+    favortie: false,
     image : "assets/nail5.jpg"
   },
   { 
@@ -78,6 +83,7 @@ let nails = [
     color: "white",
     length : "long",
     shape : "stiletto",
+    favortie: false,
     image : "assets/nail6.jpg"
   },
   { 
@@ -86,6 +92,7 @@ let nails = [
     color: "white",
     length : "medium",
     shape : "almond",
+    favortie: false,
     image : "assets/nail7.jpg"
   },
   { 
@@ -94,6 +101,7 @@ let nails = [
     color: "white",
     length : "short",
     shape : "square",
+    favortie: false,
     image : "assets/nail8.jpg"
   },
   { 
@@ -102,6 +110,7 @@ let nails = [
     color: "white",
     length : "long",
     shape : "stiletto",
+    favortie: false,
     image : "assets/nail9.jpg"
   },
   { 
@@ -110,6 +119,7 @@ let nails = [
     color: "white",
     length : "medium",
     shape : "square",
+    favortie: false,
     image : "assets/nail10.jpg"
   },
   { 
@@ -118,6 +128,7 @@ let nails = [
     color: "pink",
     length : "long",
     shape : "square",
+    favortie: false,
     image : "assets/nail11.jpg"
   },
   { 
@@ -126,6 +137,7 @@ let nails = [
     color: "pink",
     length : "long",
     shape : "stiletto",
+    favortie: false,
     image : "assets/nail12.jpg"
   },
   { 
@@ -134,6 +146,7 @@ let nails = [
     color: "pink",
     length : "short",
     shape : "square",
+    favortie: false,
     image : "assets/nail13.jpg"
   },
   { 
@@ -142,6 +155,7 @@ let nails = [
     color: "nude",
     length : "medium",
     shape : "almond",
+    favortie: false,
     image : "assets/nail15.jpg"
   },
   { 
@@ -150,6 +164,7 @@ let nails = [
     color: "pink",
     length : "medium",
     shape : "almond",
+    favortie: false,
     image : "assets/nail14.jpg"
   }
 ];
@@ -199,14 +214,11 @@ function editCardContent(card, nail) {
 const heart = card.querySelector(".heart");
 
   if (heart) {
-    heart.textContent = "♡";
+    heart.textContent = nail.favortie ? "♡" : "♥";
 
     heart.addEventListener("click", function () {
-      if (heart.textContent === "♡") {
-        heart.textContent = "♥";
-      } else {
-        heart.textContent = "♡";
-      }
+      nail.favorite = !nail.favortie;
+        heart.textContent = nail.favortie ? "♡" : "♥";
     });
   }
   // You can use console.log to help you debug!
@@ -251,5 +263,9 @@ function showFilteredCards(list) {
     cardContainer.appendChild(nextCard);
   }
 }
-  
+
+function showFavorites () {
+  const showFavorties = nails.filter((nail) => nail.favorite === true);
+  showFilteredCards(favorites);
+}
   
