@@ -215,11 +215,11 @@ function editCardContent(card, nail) {
 const heart = card.querySelector(".heart");
 
   if (heart) {
-    heart.textContent = nail.favorite ? "♡" : "♥";
+    heart.textContent = nail.favorite ? "♥" : "♡";
 
     heart.addEventListener("click", function () {
       nail.favorite = !nail.favorite;
-        heart.textContent = nail.favorite ? "♡" : "♥";
+        heart.textContent = nail.favorite ? "♥" : "♡"
     });
   }
   // You can use console.log to help you debug!
