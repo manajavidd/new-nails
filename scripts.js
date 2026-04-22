@@ -209,7 +209,6 @@ const heart = card.querySelector(".heart");
       }
     });
   }
-}
   // You can use console.log to help you debug!
   // View the output by right clicking on your website,
   // select "Inspect", then click on the "Console" tab
