@@ -266,7 +266,7 @@ function showFilteredCards(list) {
 }
 
 function showFavorites () {
-  const showFavorites = nails.filter((nail) => nail.favorite === true);
+  const favorites = nails.filter((nail) => nail.favorite === true);
   showFilteredCards(favorites);
 }
   
