@@ -218,14 +218,14 @@ const heart = card.querySelector(".heart");
     heart.textContent = nail.favorite ? "♡" : "♥";
 
     heart.addEventListener("click", function () {
-      nail.favorite = !nail.favortie;
+      nail.favorite = !nail.favorite;
         heart.textContent = nail.favorite ? "♡" : "♥";
     });
   }
   // You can use console.log to help you debug!
   // View the output by right clicking on your website,
   // select "Inspect", then click on the "Console" tab
-  console.log("new card:", nail.name);
+  console.log("new card:", nail.name, "favorite:", nail.favorite);
 }
 
 // This calls the addCards() function when the page is first loaded
