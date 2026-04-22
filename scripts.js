@@ -192,6 +192,16 @@ function editCardContent(card, nail) {
 
   const cardText = card.querySelector(".card-content p");
 
+  const heart = card.querySelector(".heart");
+
+  heart.addEventListener("click", function () {
+    if (heart.textContent === "♡") {
+      heart.textContent = "♥";
+    } else {
+      heart.textContent = "♡";
+    }
+  });
+
   if (cardText) {
     cardText.textContent = 
      `${nail.vibe} • ${nail.color} • ${nail.shape} • ${nail.length}`;
