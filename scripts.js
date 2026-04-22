@@ -211,14 +211,15 @@ function editCardContent(card, nail) {
     cardText.textContent = 
      `${nail.vibe} • ${nail.color} • ${nail.shape} • ${nail.length}`;
 }
+//heart toggle  
 const heart = card.querySelector(".heart");
 
   if (heart) {
-    heart.textContent = nail.favortie ? "♡" : "♥";
+    heart.textContent = nail.favorite ? "♡" : "♥";
 
     heart.addEventListener("click", function () {
       nail.favorite = !nail.favortie;
-        heart.textContent = nail.favortie ? "♡" : "♥";
+        heart.textContent = nail.favorite ? "♡" : "♥";
     });
   }
   // You can use console.log to help you debug!
@@ -265,7 +266,7 @@ function showFilteredCards(list) {
 }
 
 function showFavorites () {
-  const showFavorties = nails.filter((nail) => nail.favorite === true);
+  const showFavorites = nails.filter((nail) => nail.favorite === true);
   showFilteredCards(favorites);
 }
   
